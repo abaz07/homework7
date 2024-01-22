@@ -32,6 +32,49 @@ public class Main {
         }
         // Задача 4
         System.out.println("Задача 4");
+        int sum2 = 15000;
+        int months1 = 0;
+        int totalAmount1 = 15000;
+        while (totalAmount1 < 12_000_000) {
+            months1++;
+            totalAmount1 = totalAmount1 + (totalAmount1 * 7 / 100);
+            totalAmount1 = totalAmount1 + sum2;
+            System.out.println("Месяц " + months1 + ", сумма накопленний равна " + totalAmount1 + " рублей");
+        }
+        // Задача 5
+        System.out.println("Задача 5");
+        int sum3 = 15000;
+        int months2 = 0;
+        int totalAmount3 = 15000;
+        while (totalAmount3 < 12_000_000) {
+            months2++;
+            totalAmount3 = totalAmount3 + (totalAmount3 * 7 / 100);
+            totalAmount3 = totalAmount3 + sum3;
+            if (months2 % 6 == 0) {
+                System.out.println("Месяц " + months2 + ", сумма накопленний равна " + totalAmount3 + " рублей");
+            }
+        }
+        // Задача 6
+        System.out.println("Задача 6");
+        int sum4 = 15000;
+        int months3 = 0;
+        int totalAmount4 = 15000;
+        while (months3 < 108) {
+            months3++;
+            totalAmount4 = totalAmount4 + (totalAmount4 * 7 / 100);
+            totalAmount4 = totalAmount4 + sum4;
+            if (months3 % 6 == 0){
+            System.out.println("Месяц " + months3 + ", сумма накопленний равна " + totalAmount4 + " рублей");
+        }
+            }
+        // Задача 7
+        System.out.println("Задача 7");
+        int numberOfDaysInAMonth = 30;
+        for (int pyatnica = 7; pyatnica <= numberOfDaysInAMonth; pyatnica = pyatnica + 7){
+            System.out.println("Сегодня пятница, " + pyatnica + "-е число. Необходимо подготовить отчет");
+        }
+        // Задача 8
+        System.out.println("Задача 8");
 
     }
 }
