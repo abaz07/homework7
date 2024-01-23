@@ -96,7 +96,7 @@ public class Main {
             if(cometArrival > twoHundredYearsBeforeTheCurrentYear){
                 System.out.println(cometArrival);
             }
-            cometArrival = cometArrival + cometArrival1;
+            cometArrival =  cometArrival + cometArrival1;
         }
     }
 }
