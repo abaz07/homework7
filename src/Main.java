@@ -2,13 +2,15 @@ public class Main {
     public static void main(String[] args) {
         // Задача 1
         System.out.println("Задача 1");
-        int sum1 = 15000;
+        int sum = 15000;
         int totalAmount = 0;
         int months = 0;
-        while (totalAmount <= 2_459_000) {
+        int savingsGoal = 2_459_000;
+        while (totalAmount <= savingsGoal) {
+            int monthlyInterest = totalAmount/100;
             months++;
-            totalAmount = totalAmount + totalAmount/100;
-            totalAmount = totalAmount + sum1;
+            totalAmount = totalAmount + monthlyInterest;
+            totalAmount = totalAmount + sum;
             System.out.println("Месяц " + months + ", сумма накопленний равна " + totalAmount + " рублей");
         }
         // Задача 2
@@ -68,7 +70,7 @@ public class Main {
         int months3 = 0;
         int totalAmount4 = 15000;
         int year = 9;
-        int yearInMonths = 9 * 12;
+        int yearInMonths = year * 12;
         while (months3 < yearInMonths) {
             months3++;
             int percent = totalAmount1 * 7 / 100;
